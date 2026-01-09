@@ -2,7 +2,17 @@
 
 The repository contains a Machine Learning-based web application designed to recognize and classify Indonesian Sign Language (BISINDO) alphabets (A-Z).
 
-Built using a microservices architecture pattern, the project separates the inference logic (Backend via **FastAPI**) from the user interface (Frontend via **Streamlit**). It utilizes a fine-tuned **ResNet18** Deep Learning model to provide accurate real-time predictions with confidence scores.
+Built using a microservices architecture pattern, the project separates the inference logic (Backend via **FastAPI**) from the user interface (Frontend via **Streamlit**). It utilizes a fine-tuned **ResNet18** Deep Learning pretrained model to provide accurate real-time predictions with confidence scores.
+
+---
+
+## 📌 Problem Statement
+
+Communication barriers remain a significant challenge for the Deaf and Hard-of-Hearing community in Indonesia. While **BISINDO (Bahasa Isyarat Indonesia)** is a primary mode of communication for many, the vast majority of the hearing population does not understand it. This linguistic divide creates obstacles in daily interactions, education, and social inclusion.
+
+This project aims to:
+- **Bridge the communication gap** by developing a model that capable of accurately classifying BISINDO alphabets from images.
+- **Demonstrate the potential of AI** in social good by applying Computer Vision techniques to solve real-world accessibility issues in Indonesia.
 
 ---
 
