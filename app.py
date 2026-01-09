@@ -18,7 +18,6 @@ def index():
 
 @app.post("/predict", response_model=PredictionResponse)
 async def predict(file: UploadFile = File(...)):
-    # 1. Validasi Tipe File
     if not file.content_type.startswith('image/'):
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST, 
@@ -32,11 +31,8 @@ async def predict(file: UploadFile = File(...)):
         
         if img is None:
              raise HTTPException(status_code=400, detail="Could not decode image.")
-
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-        img = cv2.resize(img, (224, 224)).astype(np.uint8)
         
-        img_transform = preprocess_images(img)
+        img_transform = preprocess_images(img, target_size=(224, 224))
         
         predicted_label, confidence = predictor.predict(img_transform)
         
