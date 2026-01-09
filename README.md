@@ -79,7 +79,7 @@ BISINDO-sign-language/
 1. **Data Collection**: The BISINDO dataset contains images of hand signs representing the Indonesian alphabet (A-Z) and collected from kaggle.
 2. **Exploratory Data Analysis (EDA)**: Initial analysis to understand data distribution.
 3. **Data Preprocessing**: Handled in `preprocessor.py` to resize, normalize, and augment images for modeling.
-4. **Model Training** : Experiments with different architectures and machine learning models in `main.ipynb`, leading to the selection of a fine-tuned ResNet18 model.
+4. **Model Training** : Experiments with different architectures and machine learning models in `main.ipynb`, leading to the selection of a fine-tuned ResNet18 model with the f1 score in validation set of **94%** and test set of **98%**.
 5. **Model Evaluation**: Validate using f1-score to ensure model reliability.
 6. **Deployment**: Backend API built with FastAPI and frontend with Streamlit for user interaction.
 
