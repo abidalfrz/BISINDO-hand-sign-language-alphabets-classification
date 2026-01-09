@@ -42,7 +42,7 @@ This project aims to:
 - **Data Handling**: Pandas
 - **Numerical Computing**: NumPy
 - **Data Visualization**: Matplotlib, Seaborn
-- **Image Processing**: OpenCV, Pillow (PIL), v2
+- **Image Processing**: OpenCV, Pillow (PIL), v2, mediapipe
 - **Deep Learning Framework**: PyTorch (Torchvision)
 - **Machine Learning Algorithms**: scikit-learn, XGBoost, LightGBM, CatBoost
 
